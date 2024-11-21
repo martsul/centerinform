@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html xml:lang="ru-RU" lang="ru-RU">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/montserrat/montserrat.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/index.js"></script>
+	<title></title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__fix">
+			<div class="header__content">
+				<div class="header__group">
+					<a class="header__logo" href="/"><img class="header__logo-image" src="images/header-ci-logo.png" alt="АО ЦентрИнформ"></a>
+				</div>
+				
+				<div class="header__group">
+					<a class="header__button_mobile-hide header__fix-title" href="/about/">
+						<p class="header-menu__title">Компания</p>
+					</a>
+					
+					<a id="products-and-solutions-link" class="header__button_mobile-hide header__fix-title">
+						<p class="header-menu__title">Продукты и решения</p>
+					</a>
+					
+					<a class=" header__button_mobile-hide header__fix-title" href="/support/">
+						<p class="header-menu__title">Техподдержка</p>
+					</a>
+					
+					<a class="header__button_mobile-hide header__fix-title header__fix-title-no-margin" href="/contacts/">
+						<p class="header-menu__title">Контакты</p>
+					</a>
+				</div>
+				
+				<div class="header__group">
+					<a class="header__button_mobile-hide header__fix-colored-title" href="tel:88127405405">
+						<p class="header-menu__title">(812) 740-54-05, 303-90-20</p>
+					</a>
+					
+					<a class="header__button_mobile-hide header__fix-button header__fix-title-no-margin show-popup">
+						Напишите нам
+					</a>
+				</div>
+			</div>
+			
+			<div class="header__content header-menu_mobile-visible">
+				<a
+					class="header__button_mobile-visible"
+					href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_komsomola_1_3as/Z0kYdQBgS0IHQFtjfXV0d3hrZA==/?ll=30.371842%2C59.956350&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=17"
+					target="_blank"
+					rel="nofollow"
+				>
+					<img class="header__button_mobile-icon" src="images/mobile-menu/contacts.svg" alt="Контакты">
+				</a>
+				
+				<a class="header__button_mobile-visible show-popup">
+					<img class="header__button_mobile-icon" src="images/mobile-menu/email.svg" alt="Email">
+				</a>
+				
+				<a class="header__button_mobile-visible" href="tel:88127405405">
+					<img class="header__button_mobile-icon" src="images/mobile-menu/phone.svg" alt="Телефон">
+				</a>
+				
+				<a class="header__button_mobile-visible" id="open-mobile-menu">
+					<img id="open-mobile-menu-button" class="header__button_mobile-icon" src="images/mobile-menu/menu-open.svg" alt="Открыть">
+					<img id="close-mobile-menu-button" class="header__button_mobile-icon" src="images/mobile-menu/menu-close.svg" alt="Свернуть">
+				</a>
+			</div>
+		</div>
+		<div class="header-menu">
+			<div class="header-menu__container">
+				<div class="header-menu__section">
+					<div id="products-and-solutions-mobile-container">
+						<div class="menu-fixed-column">
+							<div class="menu-fixed-column__header">
+								<div class="menu-fixed-column__header-image">
+									<img src="images/mobile-menu/products-and-solutions/egais.svg" alt="Программы для учета алкоголя и напитков">
+								</div>
+								<h3>
+									Программы для учета алкоголя
+									и напитков
+								</h3>
+							</div>
+							
+							<div class="menu-fixed-column__links menu-fixed-column__links-mobile">
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												ISOMAG-IC
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет и маркировка напитков и соков
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master UTM
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет немаркированной продукции
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master UTM MK
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет маркированного пива и слабоалкогольных напитков
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master UTM PRO
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												поштучный учет крепкого алкоголя, маркированного пива и слабого алкоголя
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master InPack
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												поштучный учет алкоголя зарубежного производства
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master UTM RE
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет алкоголя для HoReCa
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Master UTM Shop
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет крепкого алкоголя, пива и напитков в рознице
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Контур.Маркет
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												учет алкоголя
+											</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="menu-fixed-column">
+							<div class="menu-fixed-column__header">
+								<div class="menu-fixed-column__header-image">
+									<img src="images/mobile-menu/products-and-solutions/ib-systems.svg" alt="Системы информационной безопасности">
+								</div>
+								<h3>
+									Системы информационной
+									безопасности
+								</h3>
+							</div>
+							
+							<div class="menu-fixed-column__links menu-fixed-column__links-mobile">
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												ИСБО-ПЛЮС
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												интегрированная система безопасности объектов
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Киберполигон
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												система моделирования киберугроз и ликвидации инцидентов в инфоструктурах
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Avalanche Cyber Analyst
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												система анализа киберпространствадля оперативного обнаружения проблемы
+											</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="menu-fixed-column">
+							<div class="menu-fixed-column__header">
+								<div class="menu-fixed-column__header-image">
+									<img src="images/mobile-menu/products-and-solutions/ib-tools.svg" alt="Средства защиты информации">
+								</div>
+								<h3>
+									Средства защиты информации
+								</h3>
+							</div>
+							
+							<div class="menu-fixed-column__links menu-fixed-column__links-mobile">
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Рутокен
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												носитель для электронной подписи
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Крипто Про
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												для работы с электронной подписью
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Крипто АРМ
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												для работы с электронными документами
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												VipNet
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												технология для создания виртуальной сети и защиты информации в крупных сетях
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Континент
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												комплекс шифрования
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Jinn Client
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												средство криптозащиты информации для ЭП
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Secret Net
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												защита данных и инфраструктуры серверов
+											</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="menu-fixed-column">
+							<div class="menu-fixed-column__header">
+								<div class="menu-fixed-column__header-image">
+									<img src="images/mobile-menu/products-and-solutions/business-tools.svg" alt="Сервисы для бизнеса">
+								</div>
+								<h3>
+									Сервисы для бизнеса
+								</h3>
+							</div>
+							
+							<div class="menu-fixed-column__links menu-fixed-column__links-mobile">
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Электронный документооборот
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												обмен документами с контрагентами
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Электронная отчетность
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												отчетность во все контролирующие органы
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Сверка НДС
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												автоматическая сверка счетов-фактур с контрагентами
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Поиск закупок
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												онлайн-поиск тендеров по 44-ФЗ, 223-ФЗ и коммерческим площадкам
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Проверка контрагентов
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												онлайн-проверка контрагентов на благонадежность
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Справочно-правовая система
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												сервис по бухгалтерским, кадровым и юридическим темам
+											</span>
+									</a>
+								</div>
+								
+								<div class="menu-fixed-column__divider"></div>
+								
+								<div class="menu-fixed-column__link">
+									<a>
+											<span class="menu-fixed-column__link-header">
+												Сервис видеоконференц-связи
+											</span>
+										<br>
+										<span class="menu-fixed-column__link-description">
+												программа для видео конференций
+											</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="header-mobile-menu-links">
+						<ul class="header-menu__list">
+							<li class="header-menu__item"><a class="header-menu__link" href="/about/">Компания</a></li>
+							<li class="header-menu__item">
+								<a id="products-and-solutions-mobile-link" class="header-menu__link">Продукты и решения</a>
+							</li>
+							<li class="header-menu__item"><a class="header-menu__link" href="/support/">Техподдержка</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="/contacts/">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__spacer"></div>
+	</header>
+	<div id="menu-fixed">
+		<div id="menu-fixed-container">
+			<div class="menu-fixed-column">
+				<div class="menu-fixed-column__header">
+					<h3>
+						Программы для учета алкоголя
+						и напитков
+					</h3>
+				</div>
+				
+				<div class="menu-fixed-column__links">
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								ISOMAG-IC
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет и маркировка напитков и соков
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master UTM
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет немаркированной продукции
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master UTM MK
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет маркированного пива и слабоалкогольных напитков
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master UTM PRO
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								поштучный учет крепкого алкоголя, маркированного пива и слабого алкоголя
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master InPack
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								поштучный учет алкоголя зарубежного производства
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master UTM RE
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет алкоголя для HoReCa
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Master UTM Shop
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет крепкого алкоголя, пива и напитков в рознице
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Контур.Маркет
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								учет алкоголя
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="menu-fixed-column">
+				<div class="menu-fixed-column__header">
+					<h3>
+						Системы информационной
+						безопасности
+					</h3>
+				</div>
+				
+				<div class="menu-fixed-column__links">
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								ИСБО-ПЛЮС
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								интегрированная система безопасности объектов
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Киберполигон
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								система моделирования киберугроз и ликвидации инцидентов в инфоструктурах
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Avalanche Cyber Analyst
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								система анализа киберпространствадля оперативного обнаружения проблемы
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="menu-fixed-column">
+				<div class="menu-fixed-column__header">
+					<h3>
+						Средства защиты информации
+					</h3>
+				</div>
+				
+				<div class="menu-fixed-column__links">
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Рутокен
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								носитель для электронной подписи
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Крипто Про
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								для работы с электронной подписью
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Крипто АРМ
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								для работы с электронными документами
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								VipNet
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								технология для создания виртуальной сети и защиты информации в крупных сетях
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Континент
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								комплекс шифрования
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Jinn Client
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								средство криптозащиты информации для ЭП
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Secret Net
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								защита данных и инфраструктуры серверов
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="menu-fixed-column">
+				<div class="menu-fixed-column__header">
+					<h3>
+						Сервисы для бизнеса
+					</h3>
+				</div>
+				
+				<div class="menu-fixed-column__links">
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Электронный документооборот
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								обмен документами с контрагентами
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Электронная отчетность
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								отчетность во все контролирующие органы
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Сверка НДС
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								автоматическая сверка счетов-фактур с контрагентами
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Поиск закупок
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								онлайн-поиск тендеров по 44-ФЗ, 223-ФЗ и коммерческим площадкам
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Проверка контрагентов
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								онлайн-проверка контрагентов на благонадежность
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Справочно-правовая система
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								сервис по бухгалтерским, кадровым и юридическим темам
+							</span>
+						</a>
+					</div>
+					
+					<div class="menu-fixed-column__link">
+						<a>
+							<span class="menu-fixed-column__link-header">
+								Сервис видеоконференц-связи
+							</span>
+							<br>
+							<span class="menu-fixed-column__link-description">
+								программа для видео конференций
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main>
+		<div id="feedback-overlay">
+			<div id="feedback-container">
+				<form id="feedback-form">
+					<h3 id="feedback-header">Возникли вопросы?</h3>
+					<p id="feedback-description">
+						Заполните заявку, и наш специалист проконсультирует Вас
+					</p>
+					
+					<div id="feedback-inputs-container">
+						<div class="feedback-group">
+							<label class="feedback-label" for="feedback-name">Имя</label><br>
+							<input type="text" name="name" id="feedback-name" class="feedback-input">
+						</div>
+						
+						<div class="feedback-group">
+							<label class="feedback-label" for="feedback-phone">Телефон</label><br>
+							<input type="text" name="phone" id="feedback-phone" class="feedback-input">
+						</div>
+						
+						<div class="feedback-group">
+							<label class="feedback-label" for="feedback-email">Email</label><br>
+							<input type="text" name="email" id="feedback-email" class="feedback-input">
+						</div>
+						
+						<div class="feedback-group">
+							<label class="feedback-label" for="feedback-comment">
+								Ваш вопрос <span class="feedback-label-description">(если&nbsp;Вы&nbsp;наш&nbsp;клиент, укажите&nbsp;свой&nbsp;ИНН)</span>
+							</label><br>
+							<textarea name="comment" id="feedback-comment" class="feedback-textarea"></textarea>
+						</div>
+						
+						<div class="feedback-group" id="feedback-submit-group">
+							<input type="submit" value="Отправить" id="feedback-submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+<!-- -------------------------- end-of-header ----------------------------		 -->
+
+<link rel="stylesheet" href="styles/index.css">
+
+<div id="top-banner">
+	<div class="top-banner-container">
+		<div class="top-banner-column">
+			<h1 class="top-banner-title">
+				АО «ЦентрИнформ»
+			</h1>
+			
+			<h2 class="top-banner-subtitle">
+				Информационные и защитные<br>
+				технологии
+			</h2>
+			
+			<p class="top-banner-description">
+				Программы, услуги сопровождения,<br>
+				сервисы для бизнеса и госсектора
+			</p>
+		</div>
+		
+		<div class="top-banner-column">
+			<img class="top-banner-image" src="images/top-banner-elements.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div id="features">
+	<div class="features-container">
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="egais"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/new/egais/" target="_blank">Работа с ЕГАИС</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="markirovka"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">Маркировка пива,<br>напитков и товаров</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="ecp"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">Получение<br>электронной подписи</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="otchetnost"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">Сдача<br>электронной отчетности</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="security"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">Защита информации</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="integration"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">Системная интеграция</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="development"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">
+					Разработка и сопровождение<br>
+					информационных систем
+					</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="cooperation"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">
+					Международное<br>
+					сотрудничество
+					</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="feature-item">
+			<div class="feature-image-container">
+				<div class="feature-image" id="science"></div>
+			</div>
+			
+			<div class="feature-title-container">
+				<p class="feature-title">
+					<a class="feature-link" href="/">
+					Научно-техническая<br>
+					деятельность
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="parallax">
+	<div class="mask"></div>
+</div>
+
+<div id="news">
+	<div class="news-container">
+		<h2 class="news-title"><a class="news-link" href="/about/news/">НОВОСТИ</a></h2>
+		
+		<div class="news-directions">
+			<div class="news-directions__item news-directions__left news-directions__disabled"></div>
+			<span class="news-directions__space"></span>
+			<div class="news-directions__item news-directions__right"></div>
+		</div>
+		
+		<div class="news-item-container news-item-container__desktop" id="news-item-container-1">
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Киберучения на тему «Защита критической ИТ-инфраструктуры
+							от компьютерных атак»
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						22 ноября 2023 в Нижнем Новгороде в рамках II-й Межрегиональной
+						конференции по информационной безопасности пройдут
+						киберучения на тему «Защита критической ИТ-инфраструктуры
+						от компьютерных атак»
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-divider"></div>
+			
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							АО «ЦентрИнформ» на форуме «Антиконтрафакт - 2023»
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Представители компании приняли участие в работе XI Международного
+						Форума «Антиконтрафакт - 2023», который состоялся 5-6 октября
+						в Санкт-Петербурге.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="news-item-container news-item-container__desktop" id="news-item-container-2">
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">30.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 1
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 1
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-divider"></div>
+			
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 2
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 2
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="news-item-container news-item-container__desktop" id="news-item-container-3">
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">30.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 3
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 3
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-divider"></div>
+			
+			<div class="news-item">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 4
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 4
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="news-item-container__mobile">
+			<div class="news-item" data-news-id="1">
+				<div class="news-item__date-container">
+					<p class="news-item__date">30.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Киберучения на тему «Защита критической ИТ-инфраструктуры
+							от компьютерных атак»
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						22 ноября 2023 в Нижнем Новгороде в рамках II-й Межрегиональной
+						конференции по информационной безопасности пройдут
+						киберучения на тему «Защита критической ИТ-инфраструктуры
+						от компьютерных атак»
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-item" data-news-id="2">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							АО «ЦентрИнформ» на форуме «Антиконтрафакт - 2023»
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Представители компании приняли участие в работе XI Международного
+						Форума «Антиконтрафакт - 2023», который состоялся 5-6 октября
+						в Санкт-Петербурге.
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-item" data-news-id="3">
+				<div class="news-item__date-container">
+					<p class="news-item__date">30.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 1
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 1
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-item" data-news-id="4">
+				<div class="news-item__date-container">
+					<p class="news-item__date">31.10.2023</p>
+				</div>
+				
+				<div class="news-item__title-container">
+					<h3 class="news-item__title">
+						<a class="news-item__link" href="/">
+							Тестовая новость 2
+						</a>
+					</h3>
+				</div>
+				
+				<div class="news-item__description-container">
+					<p class="news-item__description">
+						Тестовая новость 2
+					</p>
+				</div>
+			</div>
+			
+			<div class="news-footer-points">
+				<div class="news-footer-points__item" data-news-id="1" onclick="showMobileNews(1)"></div>
+				<div class="news-footer-points__item" data-news-id="2" onclick="showMobileNews(2)"></div>
+				<div class="news-footer-points__item" data-news-id="3" onclick="showMobileNews(3)"></div>
+				<div class="news-footer-points__item" data-news-id="4" onclick="showMobileNews(4)"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ------------------------------------- begin-of-footer ---------------------------------------------- -->
+
+
+</main>
+<footer>
+	<nav id="footer-links">
+		<div class="footer-column">
+			<h3 class="footer-column-colored-title">АО «ЦентрИнформ»</h3>
+			<p class="footer-column-text">Все права защищены 2010-2024</p>
+			<div class="footer-column-links">
+				<a class="footer-column-link" href="/">Условия работы с сайтом</a><br>
+			</div>
+		</div>
+		
+		<div class="footer-column">
+			<h3 class="footer-column-title">Клиентам</h3>
+			<div class="footer-column-links">
+				<a class="footer-column-link" href="/products_and_solutions/">Продукты и решения</a><br>
+				<a class="footer-column-link" href="/support/">Техподдержка</a><br>
+				<a class="footer-column-link" href="/">Реквизиты</a><br>
+				<a class="footer-column-link" href="/">Карта сайта</a><br>
+			</div>
+		</div>
+		
+		<div class="footer-column">
+			<h3 class="footer-column-title">Позвоните нам</h3>
+			<div class="footer-column-links">
+				<a class="footer-column-link" href="tel:88123039020">+7 (812) 303-90-20</a><br>
+				<a class="footer-column-link" href="tel:88127405405">+7 (812) 740-54-05</a><br>
+			</div>
+			
+			<h3 class="footer-column-title">Напишите нам</h3>
+			<div class="footer-column-links">
+				<a class="footer-column-link" href="mailto:info@center-inform.ru">info@center-inform.ru</a><br>
+			</div>
+		</div>
+		
+		<div class="footer-column">
+			<h3 class="footer-column-title">Приезжайте к нам</h3>
+			<p class="footer-column-text">
+				<a
+					class="footer-column-link"
+					href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_komsomola_1_3as/Z0kYdQBgS0IHQFtjfXV0d3hrZA==/?ll=30.371842%2C59.956350&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=17"
+					target="_blank"
+					rel="nofollow"
+				>
+					Санкт-Петербург,
+					ул. Комсомола, д. 1-3 литер АС
+				</a>
+			</p>
+			
+			<h3 class="footer-column-title">Присоединяйтесь к нам: <a href="https://vk.com/c_inform" target="_blank" rel="nofollow"><img src="images/vk-logo.svg" width="24" alt=""></a></h3>
+		</div>
+	</nav>
+</footer>
+</body>
+</html>
