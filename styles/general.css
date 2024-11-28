@@ -79,7 +79,7 @@ button {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   :root {
     --font-h2: 700 24px/1.2 "Montserrat", Helvetica, Arial, sans-serif;
   }
