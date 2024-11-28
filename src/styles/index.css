@@ -1,0 +1,580 @@
+/** Баннер с картинкой **/
+
+#top-banner{
+    background: #F7F7F7;
+}
+
+.top-banner-container{
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 3rem 2.375rem 0;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1360px){
+    .top-banner-container{
+        padding: 2.5rem 1rem 0;
+    }
+}
+
+@media(max-width: 1023px){
+    #top-banner{
+        align-items: center;
+    }
+}
+
+.top-banner-image{
+    width: 99%;
+}
+
+.top-banner-column{
+    flex-basis: 45%;
+    margin-right: 3rem;
+}
+
+.top-banner-column:last-child{
+    margin-right: 0;
+}
+
+@media(max-width: 1023px){
+    .top-banner-column{
+        flex-basis: 45%;
+        margin-right: 3rem;
+    }
+}
+
+@media(max-width: 640px){
+    .top-banner-column{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    .top-banner-column:last-child{
+        text-align: center;
+    }
+}
+
+.top-banner-title{
+    color: #BC2539;
+    font-weight: 550;
+    font-size: 2.75rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+
+    margin-bottom: 0;
+}
+
+
+.top-banner-subtitle{
+    font-weight: 550;
+    font-size: 1.75rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #666666;
+
+    margin-top: 0.5rem;
+}
+
+.top-banner-description{
+    font-weight: 550;
+    font-size: 1.5rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #000000;
+}
+
+@media(max-width: 1023px){
+    .top-banner-title{
+        font-size: 1.75rem;
+    }
+
+    .top-banner-subtitle{
+        font-size: 1.3rem;
+    }
+
+    .top-banner-description{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 640px){
+    .top-banner-title{
+        font-size: 1.5rem;
+    }
+
+    .top-banner-subtitle{
+        font-size: 1.3rem;
+    }
+
+    .top-banner-description{
+        font-size: 1.125rem;
+    }
+}
+
+/** Направления **/
+
+#features{
+    background: #F7F1F1;
+}
+
+.features-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    max-width: 85rem;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1360px){
+    .features-container{
+        justify-content: center;
+    }
+}
+
+.feature-item{
+    margin: 1.375rem;
+    padding: 1.8rem;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 2rem;
+
+    -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+
+    flex-basis: 30%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 1400px){
+    .feature-item{
+        flex-basis: 29%;
+        width: 29%;
+    }
+}
+
+@media(max-width: 1023px){
+    .feature-item{
+        flex-basis: 48%;
+        width: 48%;
+    }
+}
+
+@media(max-width: 640px){
+    .feature-item{
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+.feature-title-container{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.feature-title{
+    font-weight: 500;
+    font-size: 1.175rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.feature-link, .feature-link:active, .feature-link:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.feature-image{
+    height: 4rem;
+}
+
+/** Эффект при наведении **/
+
+.feature-item:hover .feature-link{
+    color: #FFFFFF;
+}
+
+.feature-item:hover{
+    background: #BC2539;
+}
+
+.feature-image#egais{
+    background: url("../images/features/egais.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(1):hover .feature-image#egais{
+    background: url("../images/features/egais-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#markirovka{
+    background: url("../images/features/markirovka.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(2):hover .feature-image#markirovka{
+    background: url("../images/features/markirovka-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#ecp{
+    background: url("../images/features/ecp.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(3):hover .feature-image#ecp{
+    background: url("../images/features/ecp-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#otchetnost{
+    background: url("../images/features/otchetnost.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(4):hover .feature-image#otchetnost{
+    background: url("../images/features/otchetnost-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#security{
+    background: url("../images/features/security.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(5):hover .feature-image#security{
+    background: url("../images/features/security-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#integration{
+    background: url("../images/features/integration.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(6):hover .feature-image#integration{
+    background: url("../images/features/integration-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#development{
+    background: url("../images/features/development.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(7):hover .feature-image#development{
+    background: url("../images/features/development-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#cooperation{
+    background: url("../images/features/cooperation.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(8):hover .feature-image#cooperation{
+    background: url("../images/features/cooperation-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+.feature-image#science{
+    background: url("../images/features/science.svg") no-repeat top center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 4rem;
+}
+.feature-item:nth-child(9):hover .feature-image#science{
+    background: url("../images/features/science-hover.svg") no-repeat top center;
+    background-size: contain;
+}
+
+/** Параллакс **/
+
+.parallax {
+    height: 22rem;
+    background: url("../images/parallax.jpg?v=1") no-repeat fixed center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media(max-width: 640px){
+    .parallax {
+        height: 22rem;
+        background: url("../images/parallax-mobile.jpg") no-repeat fixed center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+.parallax .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 2;
+}
+
+/** Новости **/
+#news{
+    background: #F7F1F1;
+    overflow-x: hidden;
+}
+
+.news-container{
+    max-width: 85rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 2.375rem 3rem;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1360px){
+    .news-container{
+        padding: 2rem 1rem 3rem;
+    }
+}
+
+@media(max-width: 640px){
+    .news-container{
+        padding: 2rem 1rem 0;
+    }
+}
+
+.news-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media(max-width: 640px){
+    .news-item-container{
+        display: none;
+    }
+}
+
+.news-item-container__mobile{
+    display: none;
+}
+
+@media(max-width: 640px){
+    .news-item-container__mobile{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+    }
+}
+
+.news-item{
+    flex-basis: 45%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-divider{
+    width: 1px;
+    background: #BC2539;
+    margin: 0 2rem;
+}
+
+@media(max-width: 1023px){
+    .news-item{
+        flex-basis: 100%;
+    }
+
+    .news-divider{
+        width: 100%;
+        height: 1px;
+        background: #BC2539;
+        margin: 2rem 0;
+    }
+}
+
+.news-item-container__mobile .news-item{
+    display: none;
+}
+
+.news-item__title-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-title{
+    font-weight: 550;
+    font-size: 1rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+}
+
+.news-link, .news-link:active, .news-link:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.news-link:hover{
+    color: #BC2539;
+}
+
+.news-item__date{
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+.news-item__title{
+    font-weight: 550;
+    font-size: 1rem;
+    line-height: 1.375;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+}
+
+.news-item__link, .news-item__link:hover, .news-item__link:active, .news-item__link:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.news-item__link:hover{
+    color: #BC2539;
+}
+
+.news-item__description{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+/** Стрелочки новостей **/
+.news-directions{
+    text-align: right;
+    margin: -1.75rem 0 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.news-directions__item{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.news-directions__left{
+    background: url("../images/directions/direction-left.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__left:hover{
+    background: url("../images/directions/direction-left-hover.svg?v=1") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__left.news-directions__disabled:hover{
+    background: url("../images/directions/direction-left.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__right{
+    background: url("../images/directions/direction-right.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__right:hover{
+    background: url("../images/directions/direction-right-hover.svg?v=1") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__right.news-directions__disabled:hover{
+    background: url("../images/directions/direction-right.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.news-directions__space{
+    display: inline-block;
+    width: 0.5rem;
+}
+
+@media(max-width: 1023px){
+    .news-directions{
+        text-align: center;
+    }
+}
+
+@media(max-width: 640px){
+    .news-directions{
+        display: none;
+    }
+}
+
+.news-footer-points{
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0 0;
+}
+
+.news-footer-points__item{
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin-right: 0.5rem;
+    display: inline-block;
+    background: url("../images/directions/point.svg") no-repeat center center;
+    background-size: contain;
+}
+
+.news-footer-points__item-active{
+    background: url("../images/directions/point-active.svg") no-repeat center center;
+    background-size: contain;
+}
+
+.news-footer-points__item:last-child{
+    margin-right: 0;
+}
+
